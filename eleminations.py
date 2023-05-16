@@ -6,7 +6,7 @@ def grey_test(possible_word, letter):
 
 
 def yellow_test(possible_word, letter):
-    i = letter [1]
+    i = letter[1]
     if (letter[0] in possible_word) and possible_word[i] != letter[0]:
         return True
     else:
@@ -24,6 +24,6 @@ def all_test(current_word, entry):
         return grey_test(current_word, entry)
     elif entry[2] == 'green':
         return green_test(current_word, entry)
-    elif entry [2] == 'yellow':
+    elif entry[2] == 'yellow':
         return yellow_test(current_word, entry)
 
